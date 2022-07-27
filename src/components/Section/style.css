@@ -1,0 +1,383 @@
+.section-content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 70% 30%;
+    height: 550px;
+    margin: 150px auto;
+    max-width: 1200px;
+}
+
+.section-name,
+.work {
+    background-image: linear-gradient(95.51deg, #FD93C9 0%, #BF79F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-name {
+    border-right: 1px solid red;
+    font-size: 5.5rem;
+    line-height: 85%;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.section-name-animation {
+    animation: blickCursor 800ms infinite normal, typing 4s steps(40) 0s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 780px;
+    }
+}
+
+@keyframes blickCursor {
+    from {
+        border-right: 3px solid #ffffffbf;
+    }
+
+    to {
+        border-right: 3px solid transparent;
+    }
+}
+
+.section-function {
+    font-size: 1.9rem;
+    margin-left: 5px;
+    margin-bottom: 35px;
+}
+
+.work-react {
+    color: #5ccfee;
+}
+
+.work-node {
+    color: #7cc327;
+}
+
+.section-function::after {
+    content: "";
+    margin-top: 10px;
+    border-radius: 40px;
+    width: 250px;
+    height: 6px;
+    background-image: linear-gradient(95.51deg, #FD93C9 0%, #BF79F7 100%);
+    display: block;
+}
+
+.section-btn-links {
+    display: flex;
+}
+
+.btn-linkedin {
+    background-color: #288df3;
+}
+
+.btn-github {
+    margin-left: 20px;
+    background-color: rgba(102, 16, 242, 0.3);
+}
+
+.section-btn-links {
+    margin-left: 7px;
+}
+
+.section-i-linkedin,
+.section-i-github {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.btn-linkedin,
+.btn-github {
+    color: #ffffff;
+    padding: 15px;
+    width: 170px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #BF79F7;
+    font-family: inherit;
+    text-transform: uppercase;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-linkedin::before,
+.btn-linkedin::after,
+.btn-github::before,
+.btn-github::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 1s ease;
+}
+
+.btn-github::before,
+.btn-github::after,
+.btn-linkedin::before,
+.btn-linkedin::after {
+    background-color: #be79f723;
+}
+
+.btn-linkedin::before,
+.btn-github::before {
+    top: -1em;
+    left: -1em;
+}
+
+.btn-linkedin::after,
+.btn-github::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.btn-linkedin:hover::before,
+.btn-linkedin:hover::after,
+.btn-github:hover::before,
+.btn-github:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.btn-linkedin:hover,
+.btn-github:hover {
+    color: #bf79f7;
+}
+
+.btn-linkedin:active,
+.btn-github:active {
+    filter: brightness(.8);
+}
+
+.section-photo-main {
+    display: flex;
+    justify-content: center;
+}
+
+.section-photo-content {
+    background-image: url(../../assets/profilePhoto.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff;
+    border: 0px solid #000000;
+    border-radius: 100%;
+    height: 350px;
+    width: 350px;
+    transform: translateY(0px);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@media (max-width: 1700px) {
+    .section-content {
+       margin: 80px auto;
+    }
+}
+
+@media (max-width: 1470px) {
+    .section-photo-main {
+        margin-bottom: 20px;
+    }
+
+    .section-function {
+        margin-bottom: 15px;
+    }
+
+    .section-btn-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-content {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 200px;
+    }
+
+    .section-name {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .section-function {
+        text-align: center;
+    }
+
+    .section-function::after {
+        width: 0px;
+        margin-left: 140px;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 720px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-content {
+        margin-top: 70px;
+    }
+
+    .btn-linkedin,
+    .btn-github {
+        padding: 17px;
+        width: 150px;
+    }
+
+    .section-name {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .section-photo-content {
+        height: 300px;
+        width: 300px;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 580px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .section-content {
+        margin-top: 0;
+    }
+
+    .section-name {
+        font-size: 3.5rem;
+        line-height: 84%;
+        margin-bottom: 15px;
+    }
+
+    .btn-linkedin,
+    .btn-github {
+        display: none;
+    }
+
+    .section-function {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .section-content {
+        height: 500px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+
+    .section-name {
+        font-size: 2.7rem;
+    }
+
+    .section-function {
+        font-size: 1.4rem;
+    }
+
+    .section-photo-content {
+        height: 250px;
+        width: 250px;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .section-content {
+        height: 480px;
+    }
+
+    .section-name {
+        font-size: 2.2rem;
+    }
+
+    .section-function {
+        font-size: 1.2rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 320px;
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .section-name {
+        font-size: 2rem;
+    }
+
+    .section-function {
+        font-size: 1.1rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 300px;
+        }
+    }
+}

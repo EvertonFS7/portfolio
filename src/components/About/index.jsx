@@ -10,7 +10,7 @@ const About = () => {
                 <div className="section-about-me animate__animated animate__slideInLeft">
                     <h2 className="section-about-title">Sobre mim</h2>
                     <p className="section-about-description">
-                        Desenvolvedor full-stack, cursando 4º período de engenharia de software.
+                        Desenvolvedor full-stack, cursando o 4º período de engenharia de software.
                         Amante de boas práticas de desenvolvimento, sempre deixando o ambiente mais limpo do que quando eu o encontrei. 
                     </p>
                 </div>

@@ -52,7 +52,7 @@ export default class sliderServices extends Component {
                                 <div className="slider-info">
                                     <h4 className="slider-info-title">Front-End</h4>
                                     <p className="slider-info-description">
-                                        Desenvolvimento front-end utilizando react e tudo que essa grande biblioteca tem a oferecer, garantindo uma alta performace no projeto.
+                                        Desenvolvimento front-end utilizando React e tudo que essa grande biblioteca tem a oferecer, garantindo uma alta performace no projeto.
                                     </p>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ export default class sliderServices extends Component {
                                 <div className="slider-info">
                                     <h4 className="slider-info-title">Back-End</h4>
                                     <p className="slider-info-description">
-                                        Desenvolvimento back-end utilizando node.js com express, mantendo sempre organização e estruturação no código para garantir que todos os requisitos sejam cumpridos.
+                                        Desenvolvimento back-end utilizando node.js, mantendo sempre organização e estruturação no código para garantir que todos os requisitos sejam cumpridos.
                                     </p>
                                 </div>
                             </div>

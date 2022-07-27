@@ -67,9 +67,9 @@ export default class slider extends Component {
                             <div className="slider-content-info">
                                 <img src={quality} alt="" className="slide-img" />
                                 <div className="slider-info">
-                                    <h4 className="slider-info-title">Alta qualidade</h4>
+                                    <h4 className="slider-info-title">Alta Qualidade</h4>
                                     <p className="slider-info-description">
-                                        Sempre reproduzindo com alta qualidade cada detalhe das interfaces e regras de negócio do projeto para uma alta satisfação do cliente final.
+                                        Sempre produzindo com alta qualidade cada detalhe de interfaces e regras de negócio do projeto para uma alta satisfação do cliente.
                                     </p>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ export default class slider extends Component {
                             <div className="slider-content-info">
                                 <img src={softSkills} alt="" className="slide-img" />
                                 <div className="slider-info">
-                                    <h4 className="slider-info-title">Soft skills</h4>
+                                    <h4 className="slider-info-title">Soft Skills</h4>
                                     <p className="slider-info-description">
                                         Calma para resolver problemas complexos, agilidade, rápida adaptação, sempre aberto a feedbacks, comunicação e liderança.
                                     </p>

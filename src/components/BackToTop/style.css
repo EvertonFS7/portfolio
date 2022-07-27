@@ -1,0 +1,30 @@
+.back-to-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* display: none; */
+}
+
+.scroll-top {
+    outline: none;
+    cursor: pointer;
+    color: #BF79F7;
+    border: 0;
+    font-size: 2.5rem;
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.scroll-top.active {
+    visibility: visible;
+}
+
+/* 
+@media (max-width: 800px) {
+    .back-to-top {
+        display: block;
+    }
+} */

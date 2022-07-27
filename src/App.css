@@ -1,0 +1,54 @@
+.App {
+    background-color: #080713;
+    height: calc(100% - 80px);
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 165px 0 165px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #050415;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #BF79F7;
+    border-radius: 50px; 
+}
+
+@media (max-width: 1250px) {
+    .container {
+        padding: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media (max-width: 354px) {
+    .container {
+        padding: 0 10px 0 10px;
+    }
+}

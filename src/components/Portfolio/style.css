@@ -129,6 +129,12 @@
 }
 
 @media (max-width: 470px) {
+    .section-portfolio {
+        grid-template-columns: 1fr;
+        width: 350px;
+        margin: -20px auto;
+    }
+    
     .portfolio {
         margin-top: -40px;
     }

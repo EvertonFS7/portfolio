@@ -1,0 +1,101 @@
+#about {
+    background-color: #0b0a17;
+}
+
+.section-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-about-description {
+    font-size: 1.5em;
+    line-height: 150%;
+    margin: 35px 100px 15px 0;
+}
+
+.section-about-title {
+    font-size: 3rem;
+}
+
+.section-about-title::after {
+    content: "";
+    margin-top: 10px;
+    border-radius: 40px;
+    width: 50px;
+    height: 6px;
+    background: linear-gradient(95.51deg, #FD93C9 0%, #BF79F7 100%);
+    display: block;
+}
+
+.section-about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffffff08;
+    border-radius: 20px;
+    padding: 25px;
+    width: 500px;
+    height: 200px;
+}
+
+.section-about-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .section-about {
+        grid-template-columns: 100%;
+        height: 700px;
+    }
+
+    .section-about-info {
+        justify-content: center;
+    }
+
+    .section-about-description {
+        margin: 40px 0 0 0;
+    }
+
+    #about {
+        background-color: #080713;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-about-info {
+        display: none;
+    }
+
+    .section-about {
+        height: 270px;
+    }
+
+    .section-about-description {
+        font-size: 1.3em;
+        line-height: 150%;
+        margin-top: 20px
+    }
+
+    .section-about-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .section-about-description {
+        font-size: 1.1rem;
+    }
+}

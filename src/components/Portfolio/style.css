@@ -132,7 +132,7 @@
     .section-portfolio {
         grid-template-columns: 1fr;
         width: 350px;
-        margin: -20px auto;
+        margin: -20px auto 50px auto;
     }
     
     .portfolio {

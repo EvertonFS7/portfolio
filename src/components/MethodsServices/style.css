@@ -1,0 +1,128 @@
+#methods-services {
+    background-color: #0b0a17;
+}
+
+.methods-services-title-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: -30px;
+}
+
+.methods-services-title {
+    font-size: 2.6rem;
+}
+
+.methods-services-title::after {
+    content: "";
+    margin-top: 10px;
+    border-radius: 40px;
+    width: 50px;
+    height: 6px;
+    background: linear-gradient(95.51deg, #FD93C9 0%, #BF79F7 100%);
+    display: block;
+}
+
+.methods-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    height: 400px;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+}
+
+.slider-services {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1500px) {
+    .methods-services {
+        grid-template-columns: 100%;
+        height: 800px;
+    }
+
+    .slider-diferences {
+        margin-bottom: 50px
+    }
+
+    .slider-diferences,
+    .slider-services {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    #methods-services {
+        background-color: transparent;
+    }
+
+    .methods-services {
+        grid-template-columns: 100%;
+        height: 650px;
+    }
+
+    .methods-services-title {
+        padding: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .methods-services {
+        height: 650px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .methods-services {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .methods-services {
+        padding-top: 40px;
+    }
+
+    .methods-services-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 535px) {
+    .methods-services {
+        height: 900px;
+        padding-top: 15px;
+    }
+
+    .methods-services-title {
+        font-size: 2rem;
+    }
+
+    .methods-services-title {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .methods-services {
+        height: 960px;
+    }
+}
+
+@media (max-width: 360px) {
+    .methods-services {
+        padding-top: 45px;
+    }
+
+}
+
+@media (max-width: 310px) {
+    .methods-services {
+        padding-top: 85px;
+    }
+
+}
